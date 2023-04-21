@@ -7,7 +7,7 @@ public class Calculator {
     BinaryOperator<Integer> minus = (x, y) -> x - y;
     BinaryOperator<Integer> multiply = (x, y) -> x * y;
 
-    BinaryOperator<Integer> divideFirstVariant = (x, y) -> {
+    BinaryOperator<Double> divideFirstVariant = (x, y) -> {
         if (y == 0) {
             throw new IllegalArgumentException("Division by zero");
         }
